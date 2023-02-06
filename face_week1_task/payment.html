@@ -1,0 +1,148 @@
+<html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+        <style>
+             *{
+                font-family: 'Roboto Mono', monospace;
+            }
+            ul {
+                list-style-type: none;
+                padding: 30px;
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+                
+                
+              }
+
+            li {
+                float: left;
+                text-decoration: none;
+                
+                
+               }
+
+           li a {
+               display:inline;
+               color: white;
+               margin:10px;
+               padding:30px;
+               text-decoration: none;
+               font-size: larger;
+               
+              }
+              #div_1{
+                float:right;
+            }
+
+            li a:hover {
+                  background-color:orangered;
+            }
+            #sample_div li .logo{
+                font-family: 'Inter', sans-serif;
+               font-weight: 2000px;
+                font-size: 20px;
+            }
+            
+            .main_div{
+                margin-left: 300px;
+                box-sizing: border-box;
+            }
+            h1{
+                margin-left: 300px;
+                color: orangered;
+            }
+
+            .name1{
+                border-radius: 25px;
+                
+                padding: 10px; 
+                width: 350px;
+                height: 10px;  
+            }
+            .name{
+                border-radius: 25px;
+                
+                padding: 10px; 
+                width: 350px;
+                height: 20px;  
+            }
+            .name2{
+                border-radius: 25px;
+            }     
+            .button1{
+                
+                margin: 0;
+                position: absolute;
+                left: 26%;
+                top:87%;
+                background-color:orangered;
+                border: none;
+                color:black;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 15px;
+                border-radius: 8px;
+                
+         
+            
+            }
+            body{
+                background-image: url('https://wallup.net/wp-content/uploads/2019/09/8108-black-porsche-cars-garages.jpg');
+                background-size: 100%;
+            }
+            .main_div img{
+                margin-left: 80px;
+            }
+            
+        </style>
+    </head>
+    <body>
+      <nav>        
+        <ul>
+            <div id="sample_div">
+                <li><a href="mainpage.html" class="logo">CAR CARE </a></li>
+                </div>
+                <div id="div_1">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </div>
+        </ul>
+    </nav>
+    <br>
+        <br>
+        <h1>Payment</h1>
+        <br>
+        <br>
+        <div class="main_div">
+        <form action="booking-success.html">
+            <input type="number" class="name1" placeholder="credit card number">
+            <br>
+            <br>
+            <input type="date" class="name" placeholder="expiring MM/YY">
+            <br>
+            <br>
+            <input type="number" class="name" placeholder="CVV code"><br>
+            <br>
+            <input type="number" class="name" placeholder="postal code">
+            <br>
+            <br>
+            <input type="email" class="name" placeholder="upi Id">
+            <br>
+            <br>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.dyD3gCT7TqHlFwq4biDlowHaHa&pid=Api&P=0" style="width: 200px; height: 200px; border-radius: 20px;">
+            <br>
+            <br>
+            <input type="submit" value="PAY" class="button1" style="font-size: 20;">
+        </form>
+        </div>
+        
+    </body>
+</html>

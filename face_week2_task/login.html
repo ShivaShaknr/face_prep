@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+<title>Login Form </title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" src="login.js">
+        function vfun(){
+    var uname=document.forms["myform"]["uname"].value;
+    var upswd=document.forms["myform"]["upswd"].value;
+
+if(uname==null || uname=="" ){
+          document.getElementById("errorBox").innerHTML =
+           "enter the user name";
+         return false;
+}
+
+if(upswd==null || upswd==""){
+          document.getElementById("errorBox").innerHTML =
+           "enter the password";
+         return false;
+}
+
+if (uname != '' && upswd != '' ){
+ alert("Login successfully");
+                 }
+
+}
+    </script>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    /* background: url('https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/07/shutterstock_582803470.jpg?w=750')no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box{
+
+ 
+    background:pink;
+    color:black;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 20px;
+    margin-left: 250px;
+}
+
+
+
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"],input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 149, 167);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:palevioletred;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+a:hover
+{
+    color: white;
+}
+    </style>
+<body>
+
+
+    <div class="box">
+    <img src="https://raw.githubusercontent.com/kartarkat/wesbite---form-design-and-validation/master/user.png" class="user">
+        <h1>LOGIN</h1>
+
+        <form name="myform" onsubmit="return vfun()">
+
+            <p style="color: black;">USERNAME</p>
+            <input type="text" name="uname" placeholder="Enter Username">
+
+            <p style="color:black">PASSWORD</p>
+            <input type="password" name="upswd" placeholder="Enter Password">
+
+             <div id="errorBox"></div>
+            <input type="submit" name="" value="Login">
+
+            <br><br>
+            <a href="reg.html">REGISTER</a>
+
+        </form>
+        
+    </div>
+
+    
+
+</body>
+</head>
+</html>

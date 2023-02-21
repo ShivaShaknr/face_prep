@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+<title>Register Form </title>
+<script>
+    function vfun1(){
+    var uname1=document.forms["myform2"]["uname1"].value;
+    var email1=document.forms["myform2"]["email1"].value;
+    var upswd1=document.forms["myform2"]["upswd1"].value;
+    var upswd2=document.forms["myform2"]["upswd2"].value;
+    var upswd3=document.forms["myform2"]["upswd3"].value;
+
+
+
+if(uname1==null || uname1=="" ){
+          document.getElementById("errorBox").innerHTML =
+           "enter the user name";
+         return false;
+}
+
+if(email1==null || email1==""){
+          document.getElementById("errorBox").innerHTML =
+           "enter the email";
+         return false;
+}
+
+if(upswd1==null || upswd1=="" ){
+          document.getElementById("errorBox").innerHTML =
+           "enter the password";
+         return false;
+}
+
+if(upswd2==null || upswd2==""){
+          document.getElementById("errorBox").innerHTML =
+           "enter mobile number";
+         return false;
+        }
+
+
+if(upswd3==null || upswd3==""){
+        document.getElementById("errorBox").innerHTML =
+         "enter favourite color";
+        return false;
+    }
+  
+
+         
+
+
+
+if (uname1 != '' && email1 != ''  && upswd1 != '' && upswd2 != ''&&  upswd3!='')
+
+
+  alert("Register successfull");
+                 
+
+}
+</script>
+    
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    /* background: url('https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/07/shutterstock_582803470.jpg?w=750')no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box{
+
+ 
+    background: pink;
+    color: red;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 50px;
+    border-radius: 20px;
+    margin-left: 200px
+}
+
+
+
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+p{
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"],input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 149, 167);;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: palevioletred;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+
+
+a:hover
+{
+    color: white;
+}
+    </style>
+    <script type="text/javascript" src="js.js"></script>
+
+<body>
+
+    <div class="box">
+    <img src="https://raw.githubusercontent.com/kartarkat/wesbite---form-design-and-validation/master/user.png" class="user">
+
+        <h1>REGISTER HERE</h1>
+
+        <form name="myform2" onsubmit="return vfun1()">
+
+            <p><b>FULLNAME</b></p>
+            <input type="text" name="uname1" placeholder="Enter Username">
+
+            <p><b>EMAIL</b></p>
+            <input type="Email" name="email1" placeholder="Enter email id">
+
+            <p><b>PASSWORD</b></p>
+            <input type="password" name="upswd1" placeholder="Enter Password">
+
+            <p><b>MOBILE NUMBER</b></p>
+            <input type="number" name="upswd2" placeholder="Enter mob.no">
+
+            <p><b>FAVOURITE COLOR</b></p>
+            <input type="text" name="upswd2" placeholder="Enter favourite color">
+
+             <div id="errorBox"></div>
+            <input type="submit" name="" value="Register">
+
+            <br><br>
+            <a href="login.html"> LOGIN</a>
+            <a href="forgetpswd.html"> FORGET PASSWORD</a>
+
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>

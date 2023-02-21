@@ -7,6 +7,8 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Luckiest+Guy&display=swap" rel="stylesheet">
+<!-- <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+font-family: 'Barrio'; -->
        <style>
         html{
             scroll-behavior:smooth ;
@@ -32,8 +34,9 @@
           .foods{
             width: 1500px;
             height: 2500px;
-            background-color:	rgb(255,250,250);
+            background-color:	rgb(255, 245, 238);
             margin-left:220px ;
+            
           }
           .purchase{
             width: 1500px;
@@ -116,7 +119,7 @@
             margin-left: -150px;
         }
         h1{
-        font-family: 'Arizonia';
+        font-family:'Arizonia';
         font-size: 102px;
         }
         .rotate {
@@ -322,6 +325,52 @@ code{
             -webkit-transform: scale(1.5);
              transform: scale(1.5); 
 }
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #252839;
+
+} */
+.thank-you {
+    position: relative;
+    font-size: 30px;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+    font-family: 'Barrio';
+    margin-left: 450px;
+    margin-top: 170px;
+}
+.thank-you::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:pink;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
 
 
 
@@ -458,7 +507,7 @@ sint veritatis eos perspiciatisnesciunt beatae excepturi possimus dignissimos
                 
                 </div>
                 <div class="button_3">
-                    <button class="purchase_button">PURCHASE NOW</button>
+                    <a href="purchase.html"><button class="purchase_button">PURCHASE NOW</button></a>
                 </div>
              </div>
            
@@ -516,7 +565,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. In debitis ver
                     
                 </div>
              </div>
-
+             <div class="thankyou">
+                <h4 data-text="Count Memories not Calories....." class="thank-you">Count Memories not Calories......</h4>
+             </div>
 
 
 
